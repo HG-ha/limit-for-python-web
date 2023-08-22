@@ -66,6 +66,8 @@ class Mylimit(alimit):
                     x,y = sqps.split("/")
                 else:
                     x,y = sqps,"1"
+                if x == None or x == "": continue
+                if y == None or y == "": continue
 
                 # 历史访问次数
                 bcount = histqps["count"].get(igran,0)
